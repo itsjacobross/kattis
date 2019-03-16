@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+void arc(){
+    double a; scanf("%lf",&a);
+    if(a<1 || a>pow(10,18)){printf("Invalid integer.");}
+    else{double p = sqrt(a)*4;
+    printf("%0.30lf\n",p); }
+}
+
+int main()
+{
+    arc();
+    return 0;
+}
