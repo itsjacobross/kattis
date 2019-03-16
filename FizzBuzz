@@ -32,3 +32,9 @@ void fb(){
         z=z+1;
     }
 }
+
+int main()
+{
+    fb();
+    return 0;
+}
