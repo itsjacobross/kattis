@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <math.h>
+
+void fb(){
+    int x; scanf("%d",&x);
+    int y; scanf("%d",&y);
+    int n; scanf("%d",&n);
+    int a; int t; int ret; int ret2; int z=1;
+    while(z<=n){
+        if(x>y && x>n){printf("error: x value exceeds y and n values."); break;}
+        else if(x>y){printf("error: x value exceeds y value."); break;}
+        else if(y>n){printf("error: y value exceeds n value."); break;}
+        else if(x>n){printf("error: x value exceeds n value."); break;}
+        t = z;
+        while(1){
+            a=t-x;
+            if(a==0){ret=1; break;}
+            if(a<0){ret=-1; break;}
+            if(a>0){t=t-x;}
+        }
+        t = z;
+        while(1){
+            a=t-y;
+            if(a==0){ret2=1; break;}
+            if(a<0){ret2=-1; break;}
+            if(a>0){t=t-y;}
+        }
+        if(ret==1 && ret2==1){printf("FizzBuzz\n");}
+        else if(ret==1 && ret2==-1){printf("Fizz\n");}
+        else if(ret==-1 && ret2==1){printf("Buzz\n");}
+        else{printf("%d\n",z);}
+        z=z+1;
+    }
+}
