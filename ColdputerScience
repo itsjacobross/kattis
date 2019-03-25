@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+
+void CpS(){
+    int n; scanf("%d",&n);
+    int i = 1; int instance = 0;
+    char temp[100000];
+    gets(temp);
+    while(i<10*n){
+        if(temp[i]=="-"){
+            instance=instance+1;
+        }
+        i=i+1;
+    }
+}
+
+int main()
+{
+    CpS();
+    return 0;
+}
+
+
+// Not functional.
