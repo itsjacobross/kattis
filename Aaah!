@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+
+int main()
+{
+    char first[1000]; scanf("%s",first); int line1 = strlen(first);
+    char second[1000]; scanf("%s",second); int line2 = strlen(second);
+    if(line1<line2){printf("no");}
+    else{printf("go");}
+    return 0;
+}
