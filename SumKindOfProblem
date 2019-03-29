@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int p, sone, stwo, sthree, input, dataset;
+    scanf("%d",&p);
+    for(int i=1; i<=p; i++){
+        scanf("%d %d", &dataset, &input);
+        for(int count=1; count<=input; count++){
+            sone=sone+count;
+        }
+        for(int count=1; count<=input; count++){
+            stwo=
+        }
+        
+        
+        printf("%d %d %d %d\n", i, sone, stwo, sthree);
+    }
+    return 0;
+}
+
+// Not understanding stwo and sthree.
