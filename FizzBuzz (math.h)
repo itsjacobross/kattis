@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main(){
-    int x, y, n, a, t, ret, ret2; scanf("%d %d %d", &x, &y, &n);
+    int x, y, n; scanf("%d %d %d", &x, &y, &n);
     for(int z=1; z<=n; z++){
         if(fmod(z,x)==0 && fmod(z,y)==0) {printf("FizzBuzz\n");}
         else if(fmod(z,x)==0 && fmod(z,y)!=0) {printf("Fizz\n");}
