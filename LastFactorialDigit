@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int t, d; scanf("%d",&t);
+    for(int i=1; i<=t; i++){
+        scanf("%d",&d);
+        if(d==1){printf("1\n");}
+        else if(d==2){printf("2\n");}
+        else if(d==3){printf("6\n");}
+        else if(d==4){printf("4\n");}
+        else {printf("0\n");}
+    }
+    return 0;
+}
