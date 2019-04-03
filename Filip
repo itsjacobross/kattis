@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <strings.h>
+#include <math.h>
+
+int main()
+{
+    int a,b,max,firsta=0,middlea=0,lasta=0,firstb=0,middleb=0,lastb=0; scanf("%d %d", &a, &b);
+    while(a>100){
+        a=a-100;
+        lasta=lasta+1;
+    }
+    while(a>10){
+        a=a-10;
+        middlea=middlea+1;
+    }
+    while(a>0){
+        a=a-1;
+        firsta=firsta+1;
+    }
+    while(b>100){
+        b=b-100;
+        lastb=lastb+1;
+    }
+    while(b>10){
+        b=b-10;
+        middleb=middleb+1;
+    }
+    while(b>0){
+        b=b-1;
+        firstb=firstb+1;
+    }
+    if(firsta>firstb){printf("%d%d%d",firsta,middlea,lasta);}
+    else if(firstb>firsta){printf("%d%d%d",firstb,middleb,lastb);}
+    else if(firsta=firstb){
+        if(middlea>middleb){printf("%d%d%d",firsta,middlea,lasta);}
+        else if(middleb>middlea){printf("%d%d%d",firstb,middleb,lastb);}
+        else if(middlea=middleb){
+            if(lasta>lastb){printf("%d%d%d",firsta,middlea,lasta);}
+            else if(lastb>lasta){printf("%d%d%d",firstb,middleb,lastb);}
+        }
+    }
+    return 0;
+}
