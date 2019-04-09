@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int usage, total=0, x, n;
+    scanf("%d",&x); scanf("%d",&n);
+    for(int i=1; i<=n; i++){
+        scanf("%d",&usage);
+        total=total+x-usage;
+    }
+    total=total+x;
+    printf("%d",total);
+}
