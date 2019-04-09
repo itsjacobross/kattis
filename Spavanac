@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int h, m;
+    scanf("%d %d",&h,&m);
+    for(int i=0; i<45; i++){
+        m=m-1;
+        if(m==0){m=60; h=h-1; continue;}
+        if(h==-1){h=23;}
+    }
+    printf("%d %d",h,m);
+    return 0;
+}
