@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n, s, et, t, hold=0;
+    for(int i=0; i<10; i++){
+        int miles=0, hold=0;
+        scanf("%d",&n);
+        if(n==-1){break;}
+        for(int counter=1; counter<=n; counter++){
+            scanf("%d %d",&s,&et);
+            t=et-hold;
+            hold=hold+t;
+            miles=miles+(s*t);
+            if(counter<n){continue;}
+            else{printf("%d miles\n",miles);}
+        }
+    }
+}
