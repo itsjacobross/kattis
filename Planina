@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int n, total; scanf("%d",&n);
+    int num=pow(4,n);
+    int numm=4*sqrt(pow(4,n-1));
+    total=num+1+numm;
+    printf("%d",total);    
+    return 0;
+}
