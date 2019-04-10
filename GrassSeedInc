@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    double cost, line, width, length, area, total=0;
+    scanf("%lf",&cost); scanf("%lf",&line);
+    for(int i=0; i<line; i++){
+        scanf("%lf %lf",&width,&length);
+        area=width*length;
+        total=total+area;
+    }
+    total=total*cost;
+    printf("%0.08lf",total);
+    return 0;
+}
