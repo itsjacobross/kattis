@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int number, width, height, hypo, a;
+    scanf("%d %d %d",&number,&width,&height);
+    hypo = sqrt((width*width)+(height*height));
+    for(int i=0; i<number; i++){
+        scanf("%d",&a);
+        if(a<=hypo){printf("DA\n");}
+        else{printf("NE\n");}
+    }
+    return 0;
+}
